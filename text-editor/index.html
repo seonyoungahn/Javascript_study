@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy-list</title>
+    <style>
+        .shopping-list {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: darkgrey;
+            color: white;
+        }
+        .tit-list, .tit-item {
+            color: black;
+        }
+        .shopping-list .li-item {
+            list-style: none;
+            margin-right: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="shopping-list">
+        <h1 class="tit-list">쇼핑목록</h1>
+        <form>
+            <input id="item" type="text" placeholder="New" required />
+        </form>
+
+        <h2 class="tit-item">Items</h2>
+        <ul class="li-item"></ul>
+        <button>다시 작성하기</button>
+
+    </section>
+    <script src="./main.js"></script>
+</body>
+
+</html>
